@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ES6",
+        "outDir": "./dist",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src/**/*",
+        "eslint.config.mjs",
+        "webpack.config.ts"
+    ],
+}

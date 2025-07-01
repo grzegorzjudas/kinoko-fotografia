@@ -12,6 +12,7 @@ export default {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
@@ -32,6 +33,22 @@ export default {
             {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 type: 'asset/resource',
+                resourceQuery: { not: [/raw/] },
+                generator: {
+                    filename: 'static/images/[hash][ext][query]',
+                },
+            },
+            {
+                test: /\.svg$/,
+                resourceQuery: /raw/,
+                type: 'asset/source',
+            },
+            {
+                test: /\.(ttf|woff|woff2)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'static/fonts/[hash][ext][query]',
+                },
             },
         ],
     },

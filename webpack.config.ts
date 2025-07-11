@@ -22,6 +22,7 @@ export default {
     devServer: {
         static: path.resolve(__dirname, 'dist'),
         port: DEV_SERVER_PORT,
+        historyApiFallback: true,
     },
     module: {
         rules: [

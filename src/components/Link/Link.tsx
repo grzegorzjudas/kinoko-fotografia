@@ -15,7 +15,7 @@ export function Link(props: LinkProps) {
         return false;
     }, [props.external, props.to]);
 
-    return <Styled.Link {...props} external={external} target={external ? '_blank' : '_self'} />;
+    return <Styled.Link {...props} external={external || undefined} target={external ? '_blank' : '_self'} />;
 }
 
 export default Link;

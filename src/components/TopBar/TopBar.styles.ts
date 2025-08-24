@@ -18,7 +18,7 @@ export const Header = styled.header`
 
     &:after {
         display: block;
-        content: "";
+        content: '';
         width: 100%;
         height: ${BOTTOM_BORDER_SHIFT}px;
         background-image: url("${bottomBorder}");

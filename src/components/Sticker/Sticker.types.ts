@@ -1,6 +1,5 @@
 export type StickerProps = {
-    src: string;
-    width: number;
-    height?: number;
-    borderWidth?: number;
+    name: string;
+    alt?: string;
+    className?: string;
 };

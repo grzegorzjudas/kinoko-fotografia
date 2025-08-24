@@ -17,6 +17,6 @@ export function Sticker(props: StickerProps) {
             <Styled.Image src={imageUrl} alt={props.alt ?? props.name} />
         </Styled.Container>
     );
-};
+}
 
 export default Sticker;

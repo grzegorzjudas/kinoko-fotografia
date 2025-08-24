@@ -17,6 +17,6 @@ export function ListItem(props: ListItemProps) {
             </Styled.Content>
         </Styled.ListItem>
     );
-};
+}
 
 export default ListItem;

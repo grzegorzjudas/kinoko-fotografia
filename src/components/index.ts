@@ -5,6 +5,8 @@ export { Button, type ButtonProps } from './Button';
 export { List, type ListProps, type ListItemProps } from './List';
 export { NavMenu, type NavMenuProps } from './NavMenu';
 export { PageLayout } from './PageLayout';
+export { WaveBorder, type WaveBorderProps } from './WaveBorder';
 export { Sticker, type StickerProps } from './Sticker';
+export { SocialMedia, type SocialMediaProps } from './SocialMedia';
 export { TopBar } from './TopBar';
 export { WelcomeBanner } from './WelcomeBanner';

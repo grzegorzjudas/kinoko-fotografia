@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import bottomBorder from '../../assets/images/menu-border.svg';
 import logo from '../../assets/images/logo.svg';
 import NavMenu from '../NavMenu';
+import { WaveBorder } from '../WaveBorder';
 
 const BOTTOM_BORDER_SHIFT = 16;
 
@@ -15,17 +15,18 @@ export const Header = styled.header`
     align-items: center;
     position: relative;
     padding-left: ${({ theme }) => `${theme.spacing(2)}px`};
+    isolation: isolate;
+    z-index: 3;
+`;
 
-    &:after {
-        display: block;
-        content: '';
-        width: 100%;
-        height: ${BOTTOM_BORDER_SHIFT}px;
-        background-image: url("${bottomBorder}");
-        position: absolute;
-        left: 0;
-        bottom: -${BOTTOM_BORDER_SHIFT}px;
-    }
+export const BottomWave = styled(WaveBorder)`
+    position: absolute;
+    left: 0;
+    bottom: -${BOTTOM_BORDER_SHIFT}px;
+    width: 100%;
+    display: block;
+    color: ${({ theme }) => theme.colors.primary[300]};
+    pointer-events: none;
 `;
 
 export const Logo = styled.button`

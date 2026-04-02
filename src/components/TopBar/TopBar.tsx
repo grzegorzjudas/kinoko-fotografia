@@ -5,6 +5,7 @@ export function TopBar() {
         <Styled.Header>
             <Styled.Logo />
             <Styled.NavMenuHandle />
+            <Styled.BottomWave waves={4} height={16} amplitude={0.8} />
         </Styled.Header>
     );
 }

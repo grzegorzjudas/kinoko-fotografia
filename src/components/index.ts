@@ -2,6 +2,7 @@ export { Accordion, type AccordionProps } from './Accordion';
 export { App } from './App';
 export { Breadcrumbs } from './Breadcrumbs';
 export { Button, type ButtonProps } from './Button';
+export { Chevron, type ChevronProps } from './Chevron';
 export { List, type ListProps, type ListItemProps } from './List';
 export { NavMenu, type NavMenuProps } from './NavMenu';
 export { PageLayout } from './PageLayout';

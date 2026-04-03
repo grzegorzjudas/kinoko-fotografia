@@ -19,9 +19,14 @@ export const SocialButton = styled.a<SocialButtonProps>`
     transition: transform 0.3s ease;
     color: ${({ theme }) => theme.colors.primary[600]};
     transform: scale(0.9);
+    box-sizing: content-box;
 
     &:hover {
         transform: scale(1);
+    }
+
+    @media screen and (min-width: 640px) {
+        padding: 10px;
     }
 `;
 
